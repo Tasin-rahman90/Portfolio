@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tasin — Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabinet+Grotesk:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div id="cursor"></div>
+  <div id="cursor-follower"></div>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-text">
+      <span>T</span><span>A</span><span>S</span><span>I</span><span>N</span>
+    </div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-logo">TASIN<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about" data-text="About">About</a></li>
+      <li><a href="#skills" data-text="Skills">Skills</a></li>
+      <li><a href="#projects" data-text="Work">Work</a></li>
+      <li><a href="#contact" data-text="Contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Hire Me</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#projects" class="mobile-link">Work</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- ═══════════════════════════════════
+       SECTION 1 — HERO
+  ═══════════════════════════════════ -->
+  <section id="hero">
+    <!-- Animated Grid Background -->
+    <div class="hero-grid"></div>
+    <!-- Glowing orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="hero-inner">
+      <!-- LEFT: Text -->
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Available for work · 2026
+        </div>
+        <h1 class="hero-title">
+          <span class="line line-1">
+            <span class="word">FRONTEND</span>
+          </span>
+          <span class="line line-2">
+            <span class="word outline-text">WEB DEV</span>
+          </span>
+          <span class="line line-3">
+            <span class="word">&amp; DESIGNER</span>
+          </span>
+        </h1>
+        <p class="hero-desc">
+          I'm <strong>Tasin</strong> — I craft blazing-fast, visually stunning web experiences that make people stop and stare.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <span>See My Work</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-ghost">Let's Talk</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hstat"><span class="hstat-num" data-count="40">0</span><span>+</span><p>Projects Done</p></div>
+          <div class="hstat-div"></div>
+          <div class="hstat"><span class="hstat-num" data-count="5">0</span><span>+</span><p>Years Exp</p></div>
+          <div class="hstat-div"></div>
+          <div class="hstat"><span class="hstat-num" data-count="99">0</span><span>%</span><p>Satisfaction</p></div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Photo Frame -->
+      <div class="hero-photo-wrap">
+        <div class="photo-ring photo-ring-1"></div>
+        <div class="photo-ring photo-ring-2"></div>
+        <div class="photo-frame">
+          
+            ╔══════════════════════════════════════╗
+            ║  TASIN — APNAR PHOTO EKHANE BOSHAN   ║
+            ║  Replace the <div class="photo-placeholder"> ║
+            ║  with:                               ║
+            ║  <img src="images/4.jpg"           ║
+            ║       alt="Tasin"                    ║
+            ║       class="hero-photo-img" />      ║
+            ╚══════════════════════════════════════╝
+         
+          <div class="photo-placeholder">
+            <div class="photo-icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="18" r="9" stroke="#00ff87" stroke-width="1.5"/>
+                <path d="M6 42c0-9.941 8.059-18 18-18s18 8.059 18 18" stroke="#00ff87" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <p class="photo-hint">apnar_photo.jpg</p>
+            <p class="photo-sub">Replace with your image</p>
+          </div>
+        </div>
+        <!-- Floating badges around the photo -->
+        <div class="float-badge fb-1">
+          <span class="fb-icon">⚡</span>
+          <div><strong>React</strong><small>Expert</small></div>
+        </div>
+        <div class="float-badge fb-2">
+          <span class="fb-icon">🎨</span>
+          <div><strong>UI/UX</strong><small>Designer</small></div>
+        </div>
+        <div class="float-badge fb-3">
+          <span class="fb-icon">🚀</span>
+          <div><strong>Next.js</strong><small>Dev</small></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero-scroll">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll</span>
+    </div>
+
+    <!-- Marquee ticker -->
+    <div class="hero-marquee">
+      <div class="marquee-track">
+        <span>React</span><span class="sep">✦</span>
+        <span>Next.js</span><span class="sep">✦</span>
+        <span>TypeScript</span><span class="sep">✦</span>
+        <span>CSS Animation</span><span class="sep">✦</span>
+        <span>GSAP</span><span class="sep">✦</span>
+        <span>Figma</span><span class="sep">✦</span>
+        <span>Tailwind</span><span class="sep">✦</span>
+        <span>Node.js</span><span class="sep">✦</span>
+        <span>React</span><span class="sep">✦</span>
+        <span>Next.js</span><span class="sep">✦</span>
+        <span>TypeScript</span><span class="sep">✦</span>
+        <span>CSS Animation</span><span class="sep">✦</span>
+        <span>GSAP</span><span class="sep">✦</span>
+        <span>Figma</span><span class="sep">✦</span>
+        <span>Tailwind</span><span class="sep">✦</span>
+        <span>Node.js</span><span class="sep">✦</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       SECTION 2 — ABOUT
+  ═══════════════════════════════════ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-left reveal">
+          <div class="sec-label">// About Me</div>
+          <h2 class="sec-title">I Build Things<br>That <em>Look Alive.</em></h2>
+          <p class="about-desc">
+            Hey, I'm <strong>Tasin</strong> — a passionate Frontend Web Developer from Bangladesh. I turn designs into pixel-perfect, interactive realities. My code doesn't just work — it <em>impresses</em>.
+          </p>
+          <p class="about-desc">
+            I specialize in building fast, accessible, and beautifully animated websites using React, Next.js, and modern CSS. Every project is a chance to push the boundary of what's possible on the web.
+          </p>
+          <div class="about-pills">
+            <span class="pill">React</span>
+            <span class="pill">Next.js</span>
+            <span class="pill">TypeScript</span>
+            <span class="pill">Tailwind CSS</span>
+            <span class="pill">Framer Motion</span>
+            <span class="pill">Figma</span>
+            <span class="pill">Node.js</span>
+            <span class="pill">Git</span>
+          </div>
+          <a href="#contact" class="btn btn-primary" style="margin-top:2rem; display:inline-flex;">
+            <span>Download CV</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 3v7M5 7l3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+        <div class="about-right reveal reveal-right">
+          <div class="about-card-stack">
+            <div class="acard acard-main">
+              <div class="acard-row">
+                <div class="acard-avatar">TN</div>
+                <div>
+                  <div class="acard-name">Tasin</div>
+                  <div class="acard-role">Frontend Developer</div>
+                </div>
+              </div>
+              <div class="acard-divider"></div>
+              <div class="acard-stats-row">
+                <div class="acard-stat"><strong>40+</strong><small>Projects</small></div>
+                <div class="acard-stat"><strong>5yr</strong><small>Experience</small></div>
+                <div class="acard-stat"><strong>🇧🇩</strong><small>Based in BD</small></div>
+              </div>
+            </div>
+            <div class="acard acard-tech">
+              <div class="acard-tech-label">Current Stack</div>
+              <div class="tech-icons">
+                <div class="tech-icon" title="React">Re</div>
+                <div class="tech-icon" title="Next.js">Nx</div>
+                <div class="tech-icon" title="TypeScript">TS</div>
+                <div class="tech-icon" title="Tailwind">TW</div>
+                <div class="tech-icon" title="Node">No</div>
+              </div>
+            </div>
+            <div class="acard acard-quote">
+              <span class="quote-sym">"</span>
+              Code is poetry written for machines, read by humans.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       SECTION 3 — SKILLS
+  ═══════════════════════════════════ -->
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <div class="sec-header reveal">
+        <div class="sec-label">// Skills</div>
+        <h2 class="sec-title">What I <em>Master.</em></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal reveal-delay-1">
+          <div class="skill-card-top">
+            <div class="skill-emoji">⚡</div>
+            <div class="skill-pct">92%</div>
+          </div>
+          <h3>React / Next.js</h3>
+          <div class="skill-track"><div class="skill-fill" data-w="92"></div></div>
+          <p>Building scalable SPAs and SSR apps with hooks, context, and server components.</p>
+        </div>
+        <div class="skill-card reveal reveal-delay-2">
+          <div class="skill-card-top">
+            <div class="skill-emoji">🎨</div>
+            <div class="skill-pct">95%</div>
+          </div>
+          <h3>CSS & Animation</h3>
+          <div class="skill-track"><div class="skill-fill" data-w="95"></div></div>
+          <p>Pixel-perfect layouts, keyframe animations, scroll effects, and micro-interactions.</p>
+        </div>
+        <div class="skill-card reveal reveal-delay-3">
+          <div class="skill-card-top">
+            <div class="skill-emoji">🟦</div>
+            <div class="skill-pct">88%</div>
+          </div>
+          <h3>TypeScript</h3>
+          <div class="skill-track"><div class="skill-fill" data-w="88"></div></div>
+          <p>Strongly typed, error-free code with advanced generics, types, and interfaces.</p>
+        </div>
+        <div class="skill-card reveal reveal-delay-1">
+          <div class="skill-card-top">
+            <div class="skill-emoji">🖼</div>
+            <div class="skill-pct">90%</div>
+          </div>
+          <h3>UI/UX & Figma</h3>
+          <div class="skill-track"><div class="skill-fill" data-w="90"></div></div>
+          <p>Designing beautiful, user-tested interfaces with systematic components and tokens.</p>
+        </div>
+        <div class="skill-card reveal reveal-delay-2">
+          <div class="skill-card-top">
+            <div class="skill-emoji">💨</div>
+            <div class="skill-pct">93%</div>
+          </div>
+          <h3>Tailwind CSS</h3>
+          <div class="skill-track"><div class="skill-fill" data-w="93"></div></div>
+          <p>Utility-first styling with custom configs, responsive design, and dark mode.</p>
+        </div>
+        <div class="skill-card reveal reveal-delay-3">
+          <div class="skill-card-top">
+            <div class="skill-emoji">🛠</div>
+            <div class="skill-pct">80%</div>
+          </div>
+          <h3>Node.js & APIs</h3>
+          <div class="skill-track"><div class="skill-fill" data-w="80"></div></div>
+          <p>Building REST APIs, Express servers, and integrating third-party services.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       SECTION 4 — PROJECTS
+  ═══════════════════════════════════ -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="sec-header reveal">
+        <div class="sec-label">// Selected Work</div>
+        <h2 class="sec-title">Projects That <em>Impress.</em></h2>
+      </div>
+      <div class="projects-list">
+
+        <div class="project-item reveal">
+          <div class="project-num">01</div>
+          <div class="project-info">
+            <div class="project-tags-row">
+              <span class="ptag">React</span>
+              <span class="ptag">Node.js</span>
+              <span class="ptag">PostgreSQL</span>
+            </div>
+            <h3>SaaS Analytics Dashboard</h3>
+            <p>A real-time analytics platform with live charts, team collaboration, and custom widgets. Serving 50,000+ active users with 99.9% uptime.</p>
+          </div>
+          <div class="project-thumb p1">
+            <span>DASH</span>
+            <a href="#" class="project-arrow">↗</a>
+          </div>
+        </div>
+
+        <div class="project-item reveal">
+          <div class="project-num">02</div>
+          <div class="project-info">
+            <div class="project-tags-row">
+              <span class="ptag">Next.js</span>
+              <span class="ptag">Stripe</span>
+              <span class="ptag">Framer Motion</span>
+            </div>
+            <h3>Premium E-Commerce Store</h3>
+            <p>Full-stack e-commerce with AI product recommendations, animated product pages, and a seamless checkout that boosted conversion by 38%.</p>
+          </div>
+          <div class="project-thumb p2">
+            <span>SHOP</span>
+            <a href="#" class="project-arrow">↗</a>
+          </div>
+        </div>
+
+        <div class="project-item reveal">
+          <div class="project-num">03</div>
+          <div class="project-info">
+            <div class="project-tags-row">
+              <span class="ptag">React Native</span>
+              <span class="ptag">Firebase</span>
+              <span class="ptag">AI</span>
+            </div>
+            <h3>Health &amp; Wellness App</h3>
+            <p>A mobile-first app for tracking wellness, powered by AI insights. 10,000+ downloads with a 4.8-star rating across iOS and Android.</p>
+          </div>
+          <div class="project-thumb p3">
+            <span>HLTH</span>
+            <a href="#" class="project-arrow">↗</a>
+          </div>
+        </div>
+
+        <div class="project-item reveal">
+          <div class="project-num">04</div>
+          <div class="project-info">
+            <div class="project-tags-row">
+              <span class="ptag">Next.js</span>
+              <span class="ptag">Three.js</span>
+              <span class="ptag">GSAP</span>
+            </div>
+            <h3>3D Interactive Portfolio</h3>
+            <p>An award-winning interactive portfolio with 3D animations, scroll-triggered effects, and a WebGL canvas background. Featured on Awwwards.</p>
+          </div>
+          <div class="project-thumb p4">
+            <span>3D</span>
+            <a href="#" class="project-arrow">↗</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       SECTION 5 — SERVICES
+  ═══════════════════════════════════ -->
+  <section id="services" class="section section-dark">
+    <div class="container">
+      <div class="sec-header reveal">
+        <div class="sec-label">// Services</div>
+        <h2 class="sec-title">What I <em>Offer.</em></h2>
+      </div>
+      <div class="services-grid">
+        <div class="srv-card reveal reveal-delay-1">
+          <div class="srv-num">01</div>
+          <div class="srv-icon">🌐</div>
+          <h3>Web Development</h3>
+          <p>Custom, performant websites and web apps built with React and Next.js — from landing pages to full-stack platforms.</p>
+          <div class="srv-arrow">→</div>
+        </div>
+        <div class="srv-card reveal reveal-delay-2">
+          <div class="srv-num">02</div>
+          <div class="srv-icon">🎨</div>
+          <h3>UI/UX Design</h3>
+          <p>Stunning, user-tested interfaces in Figma that convert visitors into customers and make brands unforgettable.</p>
+          <div class="srv-arrow">→</div>
+        </div>
+        <div class="srv-card reveal reveal-delay-3">
+          <div class="srv-num">03</div>
+          <div class="srv-icon">⚡</div>
+          <h3>Performance Optimization</h3>
+          <p>Speed audits, Core Web Vitals fixes, and code refactoring to make existing sites blazing fast.</p>
+          <div class="srv-arrow">→</div>
+        </div>
+        <div class="srv-card reveal reveal-delay-4">
+          <div class="srv-num">04</div>
+          <div class="srv-icon">🔗</div>
+          <h3>API Integration</h3>
+          <p>Connecting your frontend to any backend, REST API, or third-party service — cleanly and reliably.</p>
+          <div class="srv-arrow">→</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       SECTION 6 — EXPERIENCE
+  ═══════════════════════════════════ -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="sec-header reveal">
+        <div class="sec-label">// Experience</div>
+        <h2 class="sec-title">Where I've <em>Worked.</em></h2>
+      </div>
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <div class="tl-year">2023 — Now</div>
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <h3>Senior Frontend Engineer</h3>
+            <div class="tl-company">TechFlow Inc.</div>
+            <p>Leading frontend for a SaaS platform with 50k users. Built a design system adopted by 4 teams. Improved LCP by 60%.</p>
+          </div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-year">2021 — 2023</div>
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <h3>Full-Stack Developer</h3>
+            <div class="tl-company">Nexora Digital</div>
+            <p>Delivered 15+ client projects. Built a custom CMS that cut onboarding time by 60%. Mentored 3 juniors.</p>
+          </div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-year">2020 — 2021</div>
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <h3>Frontend Developer</h3>
+            <div class="tl-company">StartupBD</div>
+            <p>Built the company's web app from scratch. Implemented real-time WebSocket features and shipped to production in 3 months.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       SECTION 7 — TESTIMONIALS
+  ═══════════════════════════════════ -->
+  <section id="testimonials" class="section section-dark">
+    <div class="container">
+      <div class="sec-header reveal">
+        <div class="sec-label">// Testimonials</div>
+        <h2 class="sec-title">What They <em>Say.</em></h2>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card reveal reveal-delay-1">
+          <div class="testi-stars">★★★★★</div>
+          <p>"Tasin delivered a jaw-dropping frontend that our entire team was stunned by. Speed, design, and code quality — all top tier."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">SR</div>
+            <div><strong>Sarah Rahman</strong><small>CEO, TechFlow</small></div>
+          </div>
+        </div>
+        <div class="testi-card reveal reveal-delay-2">
+          <div class="testi-stars">★★★★★</div>
+          <p>"Our conversion rate tripled after Tasin redesigned our site. If you want a developer who truly cares about results — hire him."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">MK</div>
+            <div><strong>Marcus Kim</strong><small>Founder, Nexora</small></div>
+          </div>
+        </div>
+        <div class="testi-card reveal reveal-delay-3">
+          <div class="testi-stars">★★★★★</div>
+          <p>"The animations and interactions Tasin built made our product feel premium and polished. Users keep complimenting the UI daily."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">AF</div>
+            <div><strong>Aisha Fernandez</strong><small>PM, HealthAI</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       SECTION 8 — STATS
+  ═══════════════════════════════════ -->
+  <section id="stats" class="section stats-section">
+    <div class="container">
+      <div class="stats-row">
+        <div class="stat-box reveal">
+          <div class="stat-n" data-count="40">0</div>
+          <div class="stat-plus">+</div>
+          <div class="stat-l">Projects Delivered</div>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat-box reveal reveal-delay-1">
+          <div class="stat-n" data-count="30">0</div>
+          <div class="stat-plus">+</div>
+          <div class="stat-l">Happy Clients</div>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat-box reveal reveal-delay-2">
+          <div class="stat-n" data-count="5">0</div>
+          <div class="stat-plus">yr</div>
+          <div class="stat-l">Experience</div>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat-box reveal reveal-delay-3">
+          <div class="stat-n" data-count="99">0</div>
+          <div class="stat-plus">%</div>
+          <div class="stat-l">Satisfaction Rate</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       SECTION 9 — CONTACT
+  ═══════════════════════════════════ -->
+  <section id="contact" class="section section-dark">
+    <div class="container">
+      <div class="contact-wrap">
+        <div class="contact-left reveal">
+          <div class="sec-label">// Contact</div>
+          <h2 class="sec-title">Let's Create<br>Something <em>Legendary.</em></h2>
+          <p class="contact-sub">Have a project? An idea? A dream website? Let's make it happen. I'm currently open for freelance and full-time roles.</p>
+          <div class="contact-info-list">
+            <a href="mailto:tasin@email.com" class="cinfo-item">
+              <div class="cinfo-icon">✉</div>
+              <span>tasinrahman46427@gmail.com</span>
+            </a>
+            <a href="https://github.com/tasin" target="_blank" class="cinfo-item">
+              <div class="cinfo-icon">gh</div>
+              <span>github.com/tasin</span>
+            </a>
+            <a href="https://linkedin.com/in/tasin" target="_blank" class="cinfo-item">
+              <div class="cinfo-icon">in</div>
+              <span>linkedin.com/in/tasin</span>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal reveal-right">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-field">
+                <label>Your Name</label>
+                <input type="text" placeholder="Enter Your Name" required />
+              </div>
+              <div class="form-field">
+                <label>Email</label>
+                <input type="email" placeholder="someone@email.com" required />
+              </div>
+            </div>
+            <div class="form-field">
+              <label>Subject</label>
+              <input type="text" placeholder="Project Inquiry" />
+            </div>
+            <div class="form-field">
+              <label>Message</label>
+              <textarea rows="5" placeholder="Tell me about your project..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span>Send Message</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8h12M10 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">TASIN<span>.</span></div>
+      <p class="footer-copy">© 2026 Tasin. Built with passion &amp; caffeine. 🚀</p>
+      <div class="footer-links">
+        <a href="#hero">Top</a>
+        <a href="#projects">Work</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
